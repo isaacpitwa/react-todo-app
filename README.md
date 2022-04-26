@@ -5,9 +5,10 @@
  - Make simple calculations.
  - Read a random math-related quote.
 
-<!-- ## Live preview
+## Live preview
 
-Take a look at the Movies page we Create => [link](https://juanse7793.github.io/Capstone-2/) -->
+Take a look at the Live preview  => [here](https://isaacpitwa.github.io/react-todo-app/) 
+
 
 ## Built With
 
@@ -16,6 +17,10 @@ Take a look at the Movies page we Create => [link](https://juanse7793.github.io/
 - Webpack
 - GitFlow
 - Javascript
+
+## Folder Structure
+
+The code is available in the `src` folder. In there, you’ll see two folders named `classBased` and `functionBased` holding the class component and function component code respectively.
 
 ## Development set up
 Clone Repository  using 
