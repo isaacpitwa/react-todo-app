@@ -1,6 +1,45 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
+# Math magicians
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+ - Make simple calculations.
+ - Read a random math-related quote.
+
+<!-- ## Live preview
+
+Take a look at the Movies page we Create => [link](https://juanse7793.github.io/Capstone-2/) -->
+
+## Built With
+
+- React
+- Jsx
+- Webpack
+- GitFlow
+- Javascript
+
+## Development set up
+Clone Repository  using 
+`git@github.com:isaacpitwa/math_magicians.git` 
+
+OR  using HTTPS
+
+`https://github.com/isaacpitwa/math_magicians.git` 
+
+move into project directory
+`cd math_magicians`
+
+Install  Project dependancies using `NPM`
+
+`npm install`
+
+Install  Project dependancies using   `Yarn`
+
+`yarn install`
+
+launch project locally with 
+
+`npm start` or `yarn start`
+
 
 ## Available Scripts
 
@@ -39,32 +78,22 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 👤 Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@isaacpitwa](https://github.com/isaacpitwa)
+- Twitter: [@isaacpitwa](https://twitter.com/isaacpitwa)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/isaac-pitwa)
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues, and feature requests are welcome!
 
-### Code Splitting
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Show your support
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
