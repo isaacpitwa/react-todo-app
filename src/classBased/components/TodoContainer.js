@@ -60,8 +60,6 @@ class TodoContainer extends React.Component {
             let tempData  = data;
             if (loadedTodos) {
               tempData =   data.concat(loadedTodos).length >= 10 ? loadedTodos.splice(0,10) : data.concat(loadedTodos)
-              console.log("======> Logging Data Concasted");
-              console.log(tempData);
             }
             this.setState({ todos: tempData })});
       }
