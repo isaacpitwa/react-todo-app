@@ -96,6 +96,8 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+### Acknowledgments
+Tutorial provided by [Ibaslogic](https://ibaslogic.com/).
 
 ## 📝 License
 
