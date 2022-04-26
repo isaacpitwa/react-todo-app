@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Routes, Outlet } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import Header from './Header';
 import InputTodo from './InputTodo';
@@ -10,18 +10,17 @@ import Navbar from './Navbar';
 import SinglePage from '../pages/SinglePage';
 
 function TodoContainer() {
+  function getInitialTodos() {
+    const temp = localStorage.getItem('todos');
+    const savedTodos = JSON.parse(temp);
+    return savedTodos || [];
+  }
   const [todos, setTodos] = useState(getInitialTodos());
 
   useEffect(() => {
     const temp = JSON.stringify(todos);
     localStorage.setItem('todos', temp);
   }, [todos]);
-
-  function getInitialTodos() {
-    const temp = localStorage.getItem('todos');
-    const savedTodos = JSON.parse(temp);
-    return savedTodos || [];
-  }
 
   const handleChange = (id) => {
     setTodos((prevState) => prevState.map((todo) => {
@@ -52,10 +51,11 @@ function TodoContainer() {
   const setUpdate = (updatedTitle, id) => {
     setTodos(
       todos.map((todo) => {
-        if (todo.id === id) {
-          todo.title = updatedTitle;
+        const theTodo = todo;
+        if (theTodo.id === id) {
+          theTodo.title = updatedTitle;
         }
-        return todo;
+        return theTodo;
       }),
     );
   };
@@ -70,10 +70,15 @@ function TodoContainer() {
           element={(
             <div className="container">
               <div className="inner">
-      <Header />
-      <InputTodo addTodoProps={addTodoItem} />
-      <TodosList todos={todos} handleChangeProps={handleChange} deleteTodoProps={delTodo} setUpdate={setUpdate} />
-    </div>
+                <Header />
+                <InputTodo addTodoProps={addTodoItem} />
+                <TodosList
+                  todos={todos}
+                  handleChangeProps={handleChange}
+                  deleteTodoProps={delTodo}
+                  setUpdate={setUpdate}
+                />
+              </div>
             </div>
 )}
         />
