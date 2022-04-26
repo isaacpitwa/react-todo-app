@@ -1,8 +1,17 @@
 import React from "react"
-import { useMatch } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
-const About = () => {
-    console.log(useMatch())
-  return <div>hello from about page</div>
+const About = (props) => {
+  return <div>
+  <ul>
+    <li>
+      <Link to={`about-app`}>About App</Link>
+    </li>
+    <li>
+      <Link to={`about-author`}>About Author</Link>
+    </li>
+  </ul>
+    <Outlet/>
+</div>
 }
 export default About
