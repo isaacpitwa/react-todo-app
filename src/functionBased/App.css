@@ -62,3 +62,7 @@ body {
   outline: none;
   border: none;
 }
+a.active {
+  color: orangered;
+  text-decoration: underline;
+}
