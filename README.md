@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Math magicians
+# React-Todo-App
 
 >"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
  - Make simple calculations.
@@ -19,14 +19,14 @@ Take a look at the Movies page we Create => [link](https://juanse7793.github.io/
 
 ## Development set up
 Clone Repository  using 
-`git@github.com:isaacpitwa/math_magicians.git` 
+`git@github.com:isaacpitwa/react-todo-app.git` 
 
 OR  using HTTPS
 
-`https://github.com/isaacpitwa/math_magicians.git` 
+`https://github.com/isaacpitwa/react-todo-app.git` 
 
 move into project directory
-`cd math_magicians`
+`cd react-todo-app`
 
 Install  Project dependancies using `NPM`
 
