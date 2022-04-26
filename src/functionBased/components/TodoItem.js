@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaTrash } from 'react-icons/fa';
-import styles from './TodoItem.module.css';
+import style from './TodoItem.module.css';
 
 function TodoItem(props) {
   const [editing, setEditing] = useState(false);
@@ -60,11 +60,11 @@ function TodoItem(props) {
   }, []);
 
   return (
-    <li className={styles.item}>
+    <li className={style.item}>
       <div onDoubleClick={handleEditing} style={viewMode}>
         <input
           type="checkbox"
-          className={styles.checkbox}
+          className={style.checkbox}
           checked={completed}
           onChange={() => handleChangeProps(id)}
         />
@@ -77,7 +77,7 @@ function TodoItem(props) {
       <input
         type="text"
         style={editMode}
-        className={styles.textInput}
+        className={style.textinput}
         value={title}
         onChange={(e) => {
           setUpdate(e.target.value, id);

@@ -11,6 +11,7 @@ body {
   background: #fff;
   height: 100vh;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -30,7 +31,7 @@ body {
   margin-bottom: 20px;
   display: flex;
   border-radius: calc(0.5 * 100px);
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 38%);
   justify-content: space-evenly;
 }
 
@@ -62,6 +63,7 @@ body {
   outline: none;
   border: none;
 }
+
 a.active {
   color: orangered;
   text-decoration: underline;
@@ -69,11 +71,11 @@ a.active {
 
 /* sidebar Nav */
 
-.navBar {
+.navbar {
   position: relative;
 }
 
-.navBar button {
+.navbar button {
   position: fixed;
   left: 40px;
   top: 40px;
@@ -83,7 +85,7 @@ a.active {
   border: none;
 }
 
-.menuNav {
+.menunav {
   overflow-y: scroll;
   list-style: none;
   position: fixed;
@@ -98,7 +100,7 @@ a.active {
   z-index: 9;
 }
 
-.menuNav.showMenu {
+.menunav .showmenu {
   width: 100%;
 }
 
@@ -111,44 +113,44 @@ a {
   font-weight: bold;
 }
 
-.menuNav li:first-child {
+.menunav li:first-child {
   margin-top: 7rem;
 }
 
 /* about page */
 
-.about__content {
+.aboutcontent {
   padding: 8rem 40px;
   display: flex;
 }
 
-.about__list {
+.aboutlist {
   list-style: none;
   flex: 2;
   margin-right: 15px;
 }
 
-.about__list a {
+.aboutlist a {
   color: #9f9f9f;
   text-transform: capitalize;
   padding: 20px 0;
   font-weight: 600;
 }
 
-.about__list a:hover {
+.aboutlist a:hover {
   color: #000;
 }
 
-.main__content {
+.maincontent {
   flex: 7;
 }
 
-.main__content h1 {
+.maincontent h1 {
   margin-bottom: 15px;
   line-height: 30px;
   font-size: 30px;
 }
 
-.main__content p {
+.maincontent p {
   line-height: 25px;
 }
