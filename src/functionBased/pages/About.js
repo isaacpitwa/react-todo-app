@@ -3,8 +3,8 @@ import { Link, Outlet } from 'react-router-dom';
 
 function About() {
   return (
-    <div className="about__content">
-      <ul className="about__list">
+    <div className="aboutcontent">
+      <ul className="aboutlist">
         <li>
           <Link to="about-app">About App</Link>
         </li>

@@ -71,11 +71,11 @@ a.active {
 
 /* sidebar Nav */
 
-.navbar {
+.nav-bar {
   position: relative;
 }
 
-.navbar button {
+.nav-bar button {
   position: fixed;
   left: 40px;
   top: 40px;
@@ -85,7 +85,7 @@ a.active {
   border: none;
 }
 
-.menunav {
+.menu-nav {
   overflow-y: scroll;
   list-style: none;
   position: fixed;
@@ -100,7 +100,7 @@ a.active {
   z-index: 9;
 }
 
-.menunav .showmenu {
+.show-menu {
   width: 100%;
 }
 
@@ -113,7 +113,7 @@ a {
   font-weight: bold;
 }
 
-.menunav li:first-child {
+.menu-nav li:first-child {
   margin-top: 7rem;
 }
 
