@@ -20,7 +20,7 @@ const SinglePage = () => {
     const { slug } = useParams()
     const aboutContent = aboutData.find(item => item.slug === slug)
     const { title, description } = aboutContent
-  return <div>
+  return <div className="main__content">
             <h1>{title}</h1>
             <p>{description}</p>
         </div>
