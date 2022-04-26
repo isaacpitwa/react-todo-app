@@ -1,11 +1,25 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import React, { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import PropTypes from 'prop-types';
 
 function InputTodo(props) {
+  const {
+    addTodoProps,
+  } = props;
   const [inputText, setInputText] = useState({
     title: '',
   });
+
+  InputTodo.propTypes = {
+    addTodoProps: PropTypes.func,
+
+  };
+
+  InputTodo.defaultProps = {
+    addTodoProps: () => {},
+  };
 
   const onChange = (e) => {
     setInputText({
@@ -17,7 +31,7 @@ function InputTodo(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputText.title.trim()) {
-      props.addTodoProps(inputText.title);
+      addTodoProps(inputText.title);
       setInputText({
         title: '',
       });
@@ -43,7 +57,7 @@ function InputTodo(props) {
           className: 'submit-iconn',
         }}
       >
-        <button className="input-submit">
+        <button className="input-submit" type="button">
           {' '}
           <FaPlusCircle />
         </button>
