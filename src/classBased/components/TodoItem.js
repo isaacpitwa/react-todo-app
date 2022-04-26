@@ -1,17 +1,21 @@
+/* eslint-disable */
 import React from 'react';
 import styles from './TodoItem.module.css';
 
 class TodoItem extends React.Component {
-  state = {
-    editing: false,
-  };
-
   completedStyle = {
     fontStyle: 'italic',
     color: '#595959',
     opacity: 0.4,
     textDecoration: 'line-through',
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      editing: false,
+    };
+  }
 
   handleEditing = () => {
     this.setState({
